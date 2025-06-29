@@ -8,13 +8,13 @@ This project demonstrates end-to-end **uplift modeling**, showcasing how machine
 
 The work is structured into **three main notebooks**:
 
-1. **[01_simulate_data.ipynb](./01_simulate_data.ipynb)**  
+1. **[01_simulate_data.ipynb](notebooks/01_simulate_data.ipynb)**  
    *Simulate a synthetic educational dataset with known treatment effects.*  
    - Generate realistic dependencies between motivation, GPA, engagement, and study hours.
    - Assign treatment (private tuition) probabilistically, based on confounding variables.
    - Simulate counterfactual outcomes (`y0`, `y1`) and compute the true Individual Treatment Effect (ITE).
 
-2. **[02_model_synthetic.ipynb](./02_model_synthetic.ipynb)**  
+2. **[02_model_synthetic.ipynb](notebooks/02_model_synthetic.ipynb)**  
    *Train uplift models on synthetic data where true effects are known.*  
    - T-Learner, X-Learner, Causal Forest (CATE estimation).
    - Evaluate using:
@@ -23,7 +23,7 @@ The work is structured into **three main notebooks**:
      - Bayesian bootstrap intervals for model robustness.
    - Perform segment-level analysis to understand heterogeneity across GPA, engagement, and study hours.
 
-3. **[03_model_criteo.ipynb](./03_model_criteo.ipynb)**  
+3. **[03_model_criteo.ipynb](notebooks/03_model_criteo.ipynb)**  
    *Apply the same modeling pipeline to the real-world Criteo Uplift Dataset.*  
    - Train T-Learner, X-Learner, Causal Forest models.
    - Evaluate models using Qini AUC and credible intervals.
@@ -84,8 +84,8 @@ README.md
 ## How to Reproduce
 
 1. Clone the repository:
-
-cd 
+https://github.com/Alex5902/Causal-Uplift-Modelling.git
+cd Causal-Uplift-Modelling
 
 2. Install dependencies:
 pip install -r requirements.txt
