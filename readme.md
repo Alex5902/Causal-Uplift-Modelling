@@ -69,7 +69,7 @@ This work illustrates:
 ---
 
 ## Repository Structure
-
+```
 data/
     ├── synthetic_education_uplift.csv
     └── criteo-research-uplift-v2.1.csv
@@ -78,7 +78,7 @@ notebooks/
     ├── 02_model_synthetic.ipynb
     └── 03_model_criteo.ipynb
 README.md
-
+```
 ---
 
 ## How to Reproduce
